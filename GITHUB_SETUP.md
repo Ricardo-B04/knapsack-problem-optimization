@@ -7,17 +7,28 @@ Tu repositorio local está completamente preparado en: `/tmp/knapsack-problem-op
 ```
 ✓ Repositorio inicializado con Git
 ✓ Rama principal: main
-✓ 7 archivos preparados:
+✓ 12 archivos preparados:
   ├── README.md (documentación principal)
   ├── LICENSE (MIT)
   ├── requirements.txt (dependencias)
   ├── .gitignore (patrones de Git)
+  ├── GITHUB_SETUP.md (instrucciones para GitHub)
+  ├── notebooks/
+  │   └── mochila.ipynb (Jupyter notebook con análisis completo)
+  ├── data/
+  │   ├── datos_peso.csv (29 casos de prueba - pesos)
+  │   └── datos_beneficio.csv (29 casos de prueba - beneficios)
+  ├── results/
+  │   └── .gitkeep (carpeta para resultados generados)
   └── docs/
       ├── ALGORITHMS.md (análisis de algoritmos)
       ├── INSTALL.md (guía de instalación)
       └── RESULTS.md (resultados y recomendaciones)
 
-✓ Primer commit realizado: 79871a7
+✓ Commits realizados:
+  79871a7 - Initial commit: Core documentation
+  a24ef2b - Add notebook and data files
+  84c35c2 - Add GitHub setup instructions
 ```
 
 ---
@@ -103,24 +114,19 @@ Listo. Tu repositorio estará en GitHub.
 
 ---
 
-## 🎯 Próximos Pasos Opcionales
+## 🎯 Próximos Pasos
 
-### 1. Agregar Notebook y Datos
+### ✅ 1. Notebook y Datos - YA COMPLETADO ✓
 
-```bash
-# Copiar el notebook
-cp ~/path/to/mochila.ipynb /tmp/knapsack-problem-optimization/notebooks/
+Los archivos ya han sido agregados al repositorio:
+- ✓ `notebooks/mochila.ipynb` - Jupyter notebook con análisis completo
+- ✓ `data/datos_peso.csv` - 29 casos de prueba
+- ✓ `data/datos_beneficio.csv` - 29 casos de prueba
+- ✓ Commits locales realizados y listos para push a GitHub
 
-# Copiar datos CSV
-cp ~/path/to/datos*.csv /tmp/knapsack-problem-optimization/data/
+**Próximo paso**: Crear el repositorio en GitHub y hacer push (ver arriba)
 
-# Agregar y subir
-git add notebooks/ data/
-git commit -m "Add notebook and data files"
-git push origin main
-```
-
-### 2. Agregar GitHub Actions (CI/CD)
+### 2. Agregar GitHub Actions (CI/CD) - OPCIONAL
 
 Crea un archivo `.github/workflows/tests.yml`:
 
@@ -148,7 +154,7 @@ jobs:
         jupyter nbconvert --to notebook --execute notebooks/mochila.ipynb
 ```
 
-### 3. Agregar Badges al README
+### 3. Agregar Badges al README - OPCIONAL
 
 En la parte superior de `README.md`:
 
@@ -161,7 +167,7 @@ En la parte superior de `README.md`:
 [![PuLP](https://img.shields.io/badge/PuLP-2.7.0-orange.svg)](https://coin-or.github.io/pulp/)
 ```
 
-### 4. Crear Release
+### 4. Crear Release - OPCIONAL
 
 ```bash
 # Crear un tag
