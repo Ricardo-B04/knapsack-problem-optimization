@@ -131,10 +131,13 @@ dmypy.json
 .DS_Store
 
 # Project specific
-*.csv
+# Data files are tracked, but generated results are not
+data/resultados*.csv
 *.xlsx
 *.xls
-results/
+results/*.png
+results/*.html
+results/*.txt
 output/
 temp/
 .tmp/
